@@ -1,44 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Auric - Estilo com essência</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auric Store</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Menu de Navegação -->
   <header>
-    <h1>AURIC</h1>
-    <p>Estilo básico, elegante e moderno</p>
+    <div class="container">
+      <h1 class="logo">Auric</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre-nos">Sobre Nós</a></li>
+          <li><a href="#pagamento">Pagamento</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="colecao">
-      <h2>Nossa primeira coleção</h2>
-      <p>Em breve, novidades incríveis para você se destacar com estilo.</p>
-    </section>
-  </main>
+  <!-- Seção de Produtos -->
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <p>Em breve, nossos produtos estarão disponíveis aqui!</p>
+    <!-- Aqui depois vamos colocar as camisetas -->
+  </section>
 
-  <footer>
-    <div class="social">
-      <a href="https://instagram.com/auricstyle.store" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="mailto:auric.br@gmail.com">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <a href="https://wa.me/5519995338530" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
+  <!-- Seção Sobre Nós -->
+  <section id="sobre-nos">
+    <h2>Sobre a Auric</h2>
+    <p>
+      A Auric é mais do que uma marca de roupas — é uma representação de estilo com propósito.
+      Criamos peças para quem busca originalidade, equilíbrio e presença. Acreditamos no poder do essencial,
+      sem abrir mão da atitude.
+    </p>
+    <p>
+      Nascemos da vontade de transformar o básico em algo marcante. Cada detalhe carrega intenção:
+      da escolha das cores ao corte das peças. Na Auric, o visual é simples, mas a mensagem é forte.
+    </p>
+    <p>
+      Estamos só começando. A caminhada é longa, mas o estilo é eterno.
+      Vista Auric. Vista sua essência.
+    </p>
+  </section>
+
+  <!-- Seção de Pagamento -->
+  <section id="pagamento">
+    <h2>Pagamento</h2>
+    <p>Para comprar sua camiseta, envie o valor via Pix para a chave abaixo:</p>
+
+    <div class="pix-info">
+      <strong>Chave Pix:</strong>
+      <p>auricpix@pagamento.com</p>
+      <p>Valor: <strong>R$ 69,90</strong></p>
     </div>
-    <p>&copy; 2025 Auric. Todos os direitos reservados.</p>
-  </footer>
 
-  <!-- Botão flutuante do WhatsApp -->
-  <a class="whatsapp-button" href="https://wa.me/55SEUNUMERO" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    <p>Após o pagamento, envie o comprovante para nosso WhatsApp:</p>
+    <a href="https://wa.me/5519995338530" class="btn" target="_blank">Enviar Comprovante</a>
+  </section>
 
 </body>
 </html>
