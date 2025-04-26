@@ -1,74 +1,107 @@
-/* Estilo geral */
+/* Ajuste geral */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: #f2f2f2;
-  color: #333;
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding-top: 80px; /* espaço para o menu fixo */
 }
 
-/* Cabeçalho */
+/* Menu de navegação */
 header {
-  background: #000;
-  color: #fff;
-  padding: 50px 20px;
+  background-color: #0d0d0d;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul.nav-links li a:hover {
+  color: #cccccc;
+}
+
+/* Seção Produtos */
+#produtos {
+  background-color: #121212;
+  padding: 60px 20px;
   text-align: center;
 }
 
-/* Área principal */
-main {
+/* Seção Sobre Nós */
+#sobre-nos {
+  background-color: #181818;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#sobre-nos h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#sobre-nos p {
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Seção Pagamento */
+#pagamento {
+  background-color: #111;
   padding: 40px 20px;
   text-align: center;
 }
 
-.colecao {
-  background: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Rodapé */
-footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
+.pix-info {
+  background-color: #222;
   padding: 20px;
-}
-
-footer .social {
-  margin-bottom: 10px;
-}
-
-footer .social a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
+  margin: 20px auto;
   display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
-footer .social a:hover {
-  color: #ffcc00;
-}
-
-/* Botão Flutuante do WhatsApp */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 25px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  text-align: center;
+/* Botões */
+.btn {
+  background-color: #444;
+  color: #fff;
+  padding: 12px 25px;
   text-decoration: none;
-  z-index: 100;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background 0.3s ease;
 }
 
-.whatsapp-button:hover {
-  background: #128c7e;
+.btn:hover {
+  background-color: #666;
 }
