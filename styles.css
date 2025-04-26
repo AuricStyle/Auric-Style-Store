@@ -4,6 +4,7 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   padding-top: 80px; /* espaço para o menu fixo */
+  margin: 0;
 }
 
 /* Menu de navegação */
@@ -55,6 +56,11 @@ nav ul.nav-links li a:hover {
   text-align: center;
 }
 
+#produtos h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
 /* Seção Sobre Nós */
 #sobre-nos {
   background-color: #181818;
@@ -77,8 +83,13 @@ nav ul.nav-links li a:hover {
 /* Seção Pagamento */
 #pagamento {
   background-color: #111;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
+}
+
+#pagamento h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .pix-info {
@@ -104,4 +115,46 @@ nav ul.nav-links li a:hover {
 
 .btn:hover {
   background-color: #666;
+}
+
+/* Seção Contato */
+#contato {
+  background-color: #121212;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #555;
+}
+
+/* Rodapé */
+footer {
+  background-color: #0d0d0d;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
 }
