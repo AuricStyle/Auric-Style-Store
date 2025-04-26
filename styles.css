@@ -137,17 +137,27 @@ nav ul.nav-links li a:hover {
   flex-wrap: wrap;
 }
 
+/* Botões de Redes Sociais de Contato */
 .social-links a {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #1f1f1f, #333);
+  color: #f1f1f1;
+  padding: 12px 25px;
+  border: 1px solid #555;
+  border-radius: 12px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
+/* Efeito hover dos botões */
 .social-links a:hover {
-  background-color: #555;
+  background: linear-gradient(135deg, #2a2a2a, #444);
+  border-color: #777;
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
 /* Rodapé */
@@ -157,4 +167,39 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #888;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
+
+  .social-links a {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 }
